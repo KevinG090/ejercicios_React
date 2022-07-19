@@ -39,9 +39,10 @@
 
 /* Element.js */
 
-.lista {
+.lista,#listaLibros {
   padding: 0;
 }
-.lista li {
+.li {
   list-style: none;
+  
 }

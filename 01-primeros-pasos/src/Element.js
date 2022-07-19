@@ -11,9 +11,9 @@ const Element = () =>{
         <div>
             <h2>esto es un ejemplo de variables</h2>
             <ul className="lista">
-                <li>Nombre : {nombre}</li>
-                <li>Edad : {edad}</li>
-                <li>Web : {web}</li>
+                <li className="li">Nombre : {nombre}</li>
+                <li className="li">Edad : {edad}</li>
+                <li className="li">Web : {web}</li>
             </ul> 
         </div>
 

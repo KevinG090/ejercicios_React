@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Element from './Element';
+import SegundoComponente from './SegundoComponente';
 
 function App() {
   return (
@@ -10,8 +11,12 @@ function App() {
         <p>
           Que se dice perros  
         </p>
-        {/* Primer componente */}
-        <Element />
+        <div>
+          <hr/>
+          <Element />
+          <hr/>
+          <SegundoComponente />
+        </div>
       </header>
     </div>
   );

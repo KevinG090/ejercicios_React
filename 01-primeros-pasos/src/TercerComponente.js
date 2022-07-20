@@ -1,17 +1,24 @@
-import React from 'react'
+import React from 'react';
+import PropTypes from 'prop-types';
 
-const TercerComponente = (props) => {
+export const TercerComponente = ({nombre,apellido,edad,materias}) => { //Props
   return (
     <div className='tercerComponente'>
         <h2>Comunicacion entre componente</h2>
         <ul>
-            <li className='li' >nombre : {props.nombre}</li>
-            <li className='li' >apellido : {props.apellido}</li>
-            <li className='li' >edad : {props.edad}</li>
-            <li className='li' >matematicas : {props.materias.mate}</li>
+            <li className='li' >nombre : {nombre}</li>
+            <li className='li' >apellido : {apellido}</li>
+            <li className='li' >edad : {edad}</li>
+            <li className='li' >matematicas : {materias.mate}</li>
         </ul>
     </div>
   )
 }
 
-export default TercerComponente; 
+TercerComponente.propTypes = { // verifica el tipo de datos (PropTypes)
+    nombre : PropTypes.string,
+    apellido : PropTypes.string,
+    edad : PropTypes.string,
+    materias : PropTypes.object
+}
+// export 

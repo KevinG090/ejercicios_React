@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import Element from './Element';
 import SegundoComponente from './SegundoComponente';
-import TercerComponente from './TercerComponente';
+import {TercerComponente} from './TercerComponente';
 
 function App() {
 
@@ -10,7 +10,7 @@ function App() {
     mate : "5.0",
     ingles : "4.5",
     castell : "3.2"
-  }
+  };
 
   return (
     <div className="App">
@@ -28,7 +28,7 @@ function App() {
           <TercerComponente 
             nombre = "Kevin"
             apellido = "Guevara"
-            edad = "18 años" 
+            edad = "18 años"
             materias = {Notas} 
           />
         </div>

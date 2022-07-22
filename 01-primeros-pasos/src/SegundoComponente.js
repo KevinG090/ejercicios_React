@@ -7,7 +7,7 @@ const SegundoComponente = () => {
   return (
     <div className='segundoComponente'>
         {libros.length >= 1 ?  //Condicional (if)
-        (<ul id='listaLibros'>
+        (<ul className='listaLibros'>
                 {
                     libros.map((libro , indice) => {
                         return <li key={indice} className='li'>{libro}</li>

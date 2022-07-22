@@ -3,6 +3,7 @@ import './App.css';
 import Element from './Element';
 import SegundoComponente from './SegundoComponente';
 import {TercerComponente} from './TercerComponente';
+import {EventosComponente} from './EventosComponente';
 
 function App() {
 
@@ -26,11 +27,13 @@ function App() {
           <SegundoComponente />
           <hr/>
           <TercerComponente 
-            nombre = "Kevin"
-            apellido = "Guevara"
+            // nombre = "Kevin"
+            // apellido = "Guevara"
             edad = "18 años"
             materias = {Notas} 
           />
+          <hr/>
+          <EventosComponente/>
         </div>
       </header>
     </div>

@@ -13,6 +13,12 @@ export const EventosComponente = () => {
     const entrarSalir = (e,accion) => {
         console.log(`has ${accion} de la caja`)
     }
+    const estasDentro = e => {
+        console.log("Estas dentro del input");
+    }
+    const estasFuera = e => {
+        console.log("Estas estas Fuera del input");
+    }
 
   return (
     <div className='EventosComponente'>
@@ -29,6 +35,12 @@ export const EventosComponente = () => {
         >
             <p>Caja</p>
         </div>
+        <p>
+            <input  type="text" 
+                    onFocus={ estasDentro } // cuando esta sobre el elemento
+                    onBlur={ estasFuera } // cuando no esta sobre el elemento
+                    placeholder="Introduce algo..."/>
+        </p>
     </div>
   )
 }
